@@ -7,9 +7,9 @@ from builtins import int
 x = []
 y = []
 
-def load_data():
+def load_data(DIR):
     #数据路径用户根据自己存放位置更改
-    for line in open("D:/LR.txt"):  
+    for line in open(DIR):  
         line_tmp = line.split()
         _x = int(line_tmp[0])
         _y = int(line_tmp[1])
