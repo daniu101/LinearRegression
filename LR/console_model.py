@@ -10,15 +10,14 @@ from LR.database_model import write_data
 
 DIR_DATASET = "D:/LR.txt"
 
+DIR_DATABASE = "D:/LR_Database.txt"
+
+p0=[100,2]
 x,y = load_data(DIR_DATASET)
 Xi=np.array(x)
 Yi=np.array(y)
-
-p0=[100,2]
-
 s="迭代！" 
 
-DIR_DATABASE = "D:/LR_Database.txt"
 Para=leastsq(error,p0,args=(Xi,Yi,s)) 
 k,b=Para[0]
 
