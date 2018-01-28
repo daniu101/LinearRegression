@@ -8,7 +8,7 @@ from LR.error_model import error
 from LR.matplotlib_model import matplotlib_show
 from LR.database_model import write_data
 
-DIR_DATASET = "D:/LR.txt"
+DIR_DATASET = "D:/LRLR.txt"
 DIR_DATABASE = "D:/LR_Database.txt"
 
 p0=[100,2] #存放w、b初始值，可任意制定
